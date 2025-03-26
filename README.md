@@ -1,91 +1,96 @@
-1. Problem:
+# ¿Donde Estoy USM?
 
-At the university, some students, especially newcomers, face difficulties finding their way around the campus and locating their classrooms. This can affect student life and integration into the university community.
-2. Solution:
+A mobile navigation system to help students find their way around USM campus.
 
-We propose an information system in mobile format to guide new students or learners around the campus. It will allow them to search for buildings and classrooms, with guidance both outside the university to find the building and inside the building to locate the classroom.
+## 📱 Overview
 
-Additionally, we aim to integrate this system with various subjects, allowing students to log in with their institutional account and search for their subjects by major to easily access their classrooms. (This will require a different level of integration.)
-3. Objective of the Proposal:
+### Problem
+At the university, students (especially newcomers) face difficulties finding their way around campus and locating classrooms, affecting their integration into university life.
 
-The main objective of this proposal is to create a mobile information system that offers students:
+### Solution
+A mobile information system that guides students through campus, featuring:
+- Building and classroom search functionality
+- Indoor and outdoor navigation
+- Integration with institutional accounts for personalized class schedules
 
-    Interactive maps showing their position and the location of their classrooms using GPS.
+## 🎯 Objectives
 
-    GPS navigation through the university’s facilities.
+- Provide interactive GPS-based maps showing classroom locations
+- Enable real-time navigation through university facilities
+- Offer personalized classroom/subject search based on schedules
 
-    Personalized search for classrooms/subjects based on class schedules (optional for subjects).
+## 🔑 Key Features
 
-4. Main Features of the Application:
+### Interactive Campus Maps
+- Digital maps of university buildings and floors
+- Real-time position tracking
+- Floor-by-floor navigation
 
-    Interactive Maps for the Campus:
+### GPS Navigation
+- Real-time directions to classrooms
+- Similar to city GPS navigation
 
-        Digital maps of the university will be implemented, allowing students to easily navigate through the different buildings and floors on campus.
+### Personalized Search
+- Classroom number search
+- Subject-based location finding
+- Current position to destination routing
 
-    GPS Navigation Through the University:
+### Visual Guides
+- Video tutorials for building navigation
+- Traditional floor plan maps
+- Step-by-step instructions
 
-        Using geolocation technology, students will receive real-time directions to their classrooms, similar to how GPS works for city navigation.
+## 🚀 MVP (Building U Pilot)
 
-    Personalized Search for Classrooms and Subjects:
+### Features
+- Floor-by-floor maps of Building U
+- Video guides from entrance to classrooms
+- Basic classroom search functionality
+- Trial subject integration
 
-        Students will be able to enter their classroom number or subject, and the app will automatically show them the location of the classroom and directions from their current position.
+## 🛠️ Technical Stack
 
-    Mapped Routes or Videos (to reconsider):
+- **Frontend:** React Native
+- **Backend:** Firebase
+- **Maps:** OpenStreetMap
+- **Authentication:** Firebase Auth
 
-        Students will have access to videos for each building and classroom to help them find them in a more visual way.
+## 🌿 Branch Management and WorkFlow
 
-        A more “traditional” map with building floor plans and instructions will also be available.
+### Main Branch (`main`)
+- Contains production-ready code
+- Only accepts merges from `staging`
+- Requires pull request approval
+- Tagged for releases
 
-5. Expected Benefits:
+### Staging Branch (`staging`)
+- Integration branch for feature testing
+- Features are tested here before production
+- Regular deployments to testing environment
+- Merges from feature branches
 
-    Improve Student Integration:
+### Workflow
+1. Create feature branches from `staging`
+2. Develop and test features
+3. Merge to `staging` via pull request
+4. Test in staging environment
+5. Merge to `main` when ready for production
 
-        Both new and returning students will have a smoother, less stressful experience when heading to classes, improving their integration into the university community.
+## 📋 Requirements
 
-    Increase Efficiency:
+### Visual Studio Extensions
+- GitMoji for commits :) 
 
-        The app will help students optimize their time, reducing delays caused by difficulty finding classrooms.
+### Institutional
+- Digital floor plans
+- Classroom listings
+- Access to building information
 
-    Accessibility and Ease of Use:
+### Technical
+- React Native development environment
+- Firebase project setup
+- OpenStreetMap API access
 
-        The app will be intuitive and user-friendly, allowing students with varying levels of tech skills to navigate the campus without issues.
+## 🔗 Useful Links
 
-6. MVP (Minimum Viable Product):
-
-We will implement the system in Building U, which will serve as a pilot to test the system’s functionality and gather feedback (we will use freshmen as test users).
-
-MVP Features:
-
-    Maps for Building U (by floor).
-
-    Video guides from the entrance to the classroom the student is looking for.
-
-    Video and/or mapped guidance to help students navigate inside the building.
-
-    Search for classrooms/subjects (limited to selected trial subjects).
-
-7. Institutional Requirements:
-
-To carry out the project, we will need the following from the university:
-
-    Digital Floor Plans of the Rooms:
-
-        Detailed floor plans for all floors of the buildings, especially for Building U, showing the exact locations of each classroom.
-
-    List of Classrooms:
-
-        An updated list of the classrooms in each building, with their corresponding identification, room number, or code.
-
-8. Technical Requirements:
-
-The application will be developed using the following technologies:
-
-    React Native: Framework for developing cross-platform mobile applications (Do we need a Mac to program for iOS?).
-
-    Firebase: Platform for database management, user authentication, and cloud storage.
-
-    OpenStreetMap: Tool for implementing map and navigation functionality on campus.
-
-Relevant Links:
-
-    OpenStreetMap: https://www.openstreetmap.org/#map=18/-33.036417/-71.485961 The university is already mapped.
+- [OpenStreetMap USM](https://www.openstreetmap.org/#map=18/-33.036417/-71.485961)
