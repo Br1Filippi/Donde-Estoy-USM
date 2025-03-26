@@ -1,50 +1,91 @@
-# Welcome to your Expo app 👋
+1. Problem:
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+At the university, some students, especially newcomers, face difficulties finding their way around the campus and locating their classrooms. This can affect student life and integration into the university community.
+2. Solution:
 
-## Get started
+We propose an information system in mobile format to guide new students or learners around the campus. It will allow them to search for buildings and classrooms, with guidance both outside the university to find the building and inside the building to locate the classroom.
 
-1. Install dependencies
+Additionally, we aim to integrate this system with various subjects, allowing students to log in with their institutional account and search for their subjects by major to easily access their classrooms. (This will require a different level of integration.)
+3. Objective of the Proposal:
 
-   ```bash
-   npm install
-   ```
+The main objective of this proposal is to create a mobile information system that offers students:
 
-2. Start the app
+    Interactive maps showing their position and the location of their classrooms using GPS.
 
-   ```bash
-    npx expo start
-   ```
+    GPS navigation through the university’s facilities.
 
-In the output, you'll find options to open the app in a
+    Personalized search for classrooms/subjects based on class schedules (optional for subjects).
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+4. Main Features of the Application:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+    Interactive Maps for the Campus:
 
-## Get a fresh project
+        Digital maps of the university will be implemented, allowing students to easily navigate through the different buildings and floors on campus.
 
-When you're ready, run:
+    GPS Navigation Through the University:
 
-```bash
-npm run reset-project
-```
+        Using geolocation technology, students will receive real-time directions to their classrooms, similar to how GPS works for city navigation.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+    Personalized Search for Classrooms and Subjects:
 
-## Learn more
+        Students will be able to enter their classroom number or subject, and the app will automatically show them the location of the classroom and directions from their current position.
 
-To learn more about developing your project with Expo, look at the following resources:
+    Mapped Routes or Videos (to reconsider):
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+        Students will have access to videos for each building and classroom to help them find them in a more visual way.
 
-## Join the community
+        A more “traditional” map with building floor plans and instructions will also be available.
 
-Join our community of developers creating universal apps.
+5. Expected Benefits:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+    Improve Student Integration:
+
+        Both new and returning students will have a smoother, less stressful experience when heading to classes, improving their integration into the university community.
+
+    Increase Efficiency:
+
+        The app will help students optimize their time, reducing delays caused by difficulty finding classrooms.
+
+    Accessibility and Ease of Use:
+
+        The app will be intuitive and user-friendly, allowing students with varying levels of tech skills to navigate the campus without issues.
+
+6. MVP (Minimum Viable Product):
+
+We will implement the system in Building U, which will serve as a pilot to test the system’s functionality and gather feedback (we will use freshmen as test users).
+
+MVP Features:
+
+    Maps for Building U (by floor).
+
+    Video guides from the entrance to the classroom the student is looking for.
+
+    Video and/or mapped guidance to help students navigate inside the building.
+
+    Search for classrooms/subjects (limited to selected trial subjects).
+
+7. Institutional Requirements:
+
+To carry out the project, we will need the following from the university:
+
+    Digital Floor Plans of the Rooms:
+
+        Detailed floor plans for all floors of the buildings, especially for Building U, showing the exact locations of each classroom.
+
+    List of Classrooms:
+
+        An updated list of the classrooms in each building, with their corresponding identification, room number, or code.
+
+8. Technical Requirements:
+
+The application will be developed using the following technologies:
+
+    React Native: Framework for developing cross-platform mobile applications (Do we need a Mac to program for iOS?).
+
+    Firebase: Platform for database management, user authentication, and cloud storage.
+
+    OpenStreetMap: Tool for implementing map and navigation functionality on campus.
+
+Relevant Links:
+
+    OpenStreetMap: https://www.openstreetmap.org/#map=18/-33.036417/-71.485961 The university is already mapped.
