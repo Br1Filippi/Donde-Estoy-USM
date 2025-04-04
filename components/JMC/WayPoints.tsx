@@ -165,7 +165,7 @@ const JMCWayPoints: WaypointProps[] = [
     },
     {
         id: 'Q',
-        name: 'Edificio q',
+        name: 'Edificio Q',
         type: 'building',
         coordinates: {
             latitude: -33.036620,
