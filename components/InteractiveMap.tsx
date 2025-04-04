@@ -4,6 +4,7 @@ import MapView, { Marker, Polygon, UrlTile } from 'react-native-maps';
 import * as Location from 'expo-location';
 import SearchBar from './SearchBar';
 import JMCBuildings from './JMC/Buildings';
+import JMCWayPoints from './JMC/WayPoints';
 
 interface InteractiveMapProps {
   userLocation: {
@@ -47,7 +48,7 @@ const InteractiveMap = ({ userLocation }: InteractiveMapProps) => {
         }}
         minZoomLevel={16.5}
         showsUserLocation={true} 
-        mapType='terrain'
+        mapType='satellite'
         showsPointsOfInterest={false}
         showsBuildings={false}
         customMapStyle={mapStyle}
@@ -61,7 +62,17 @@ const InteractiveMap = ({ userLocation }: InteractiveMapProps) => {
                     strokeWidth={2}
                     tappable={true}
                 />
-            ))}
+            ))},
+        {JMCWayPoints.map((waypoint) => (
+          waypoint.shown && (
+            <Marker
+              key={waypoint.id}
+              coordinate={waypoint.coordinates}
+              title={waypoint.name}
+              description={waypoint.type}
+            />
+          )
+        ))}
       </MapView>
       <SearchBar  />
       {/* Uncomment this for debuggin the heading and user position :) */}

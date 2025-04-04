@@ -1,7 +1,6 @@
 interface BuildingProps {
     id: string;
     name: string;
-    description?: string;
     coordinates: {
         latitude: number;
         longitude: number;
@@ -15,7 +14,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "A",
         name: "Edificio A",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.036520, longitude: -71.486862 },
             {latitude: -33.036300, longitude: -71.486776 },
@@ -27,31 +25,28 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "B1",
         name: "Edificio B",
-        description: "Edificio de informatica",
         coordinates: [
-            {latitude: -33.036624, longitude: -71.486723 },
-            {latitude: -33.036712, longitude: -71.486768 },
-            {latitude: -33.036818, longitude: -71.486447 },
-            {latitude: -33.036728, longitude: -71.486401 },
+            {latitude: -33.036614, longitude: -71.486693 },  
+            {latitude: -33.036702, longitude: -71.486738 }, 
+            {latitude: -33.036808, longitude: -71.486417 },  
+            {latitude: -33.036718, longitude: -71.486371 },  
         ],
         color: color,
     },
     {
         id: "B2",
         name: "Edificio B",
-        description: "Edificio de informatica",
         coordinates: [
-            {latitude: -33.036689, longitude: -71.486430 },
-            {latitude: -33.036615, longitude: -71.486398 },
-            {latitude: -33.036516, longitude: -71.486693 },
-            {latitude: -33.036588, longitude: -71.486736 },
+            {latitude: -33.036659, longitude: -71.486420 },  
+            {latitude: -33.036585, longitude: -71.486388 },  
+            {latitude: -33.036486, longitude: -71.486683 },  
+            {latitude: -33.036558, longitude: -71.486726 },  
         ],
         color: color,
     },
     {
         id: "C1",
         name: "Edificio C",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.036714, longitude: -71.486401 },
             {latitude: -33.036973, longitude: -71.485560 },
@@ -68,7 +63,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "C2",
         name: "Edificio C",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.036676, longitude: -71.486385 },
             {latitude: -33.036496, longitude: -71.486310 },
@@ -82,23 +76,21 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "C3",
         name: "Edificio C",
-        description: "Edificio de informatica",
         coordinates: [
-            {latitude: -33.037182, longitude: -71.485612 },
-            {latitude: -33.037204, longitude: -71.485564 },
-            {latitude: -33.037200, longitude: -71.485492 },
-            {latitude: -33.037164, longitude: -71.485433 },
-            {latitude: -33.037119, longitude: -71.485409 },
-            {latitude: -33.037060, longitude: -71.485414 },
-            {latitude: -33.037013, longitude: -71.485460 },
-            {latitude: -33.036982, longitude: -71.485527 },
+            {latitude: -33.037182, longitude: -71.485572 }, 
+            {latitude: -33.037204, longitude: -71.485524 }, 
+            {latitude: -33.037200, longitude: -71.485452 }, 
+            {latitude: -33.037164, longitude: -71.485393 },  
+            {latitude: -33.037119, longitude: -71.485369 },  
+            {latitude: -33.037060, longitude: -71.485374 },  
+            {latitude: -33.037013, longitude: -71.485420 }, 
+            {latitude: -33.036982, longitude: -71.485487 },  
         ],
         color: color,
     },
     {
         id: "D",
         name: "Edificio D",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.036680, longitude: -71.487214 },
             {latitude: -33.036766, longitude: -71.486959 },
@@ -116,7 +108,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "E",
         name: "Edificio E",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.036523, longitude: -71.487700 },
             {latitude: -33.036620, longitude: -71.487742 },
@@ -128,7 +119,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "F",
         name: "Edificio F",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.036091, longitude: -71.487943 },
             {latitude: -33.036206, longitude: -71.487589 },
@@ -140,7 +130,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "G",
         name: "Edificio G",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.036210, longitude: -71.487544 },
             {latitude: -33.036365, longitude: -71.487009 },
@@ -154,7 +143,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "H1",
         name: "Edificio H",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.036134, longitude: -71.487157 },
             {latitude: -33.036037, longitude: -71.487114 },
@@ -166,7 +154,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "H2",
         name: "Edificio H",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.035999, longitude: -71.487098 },
             {latitude: -33.035905, longitude: -71.487058 },
@@ -178,7 +165,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "I",
         name: "Edificio I",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.037398, longitude: -71.485714 },
             {latitude: -33.037434, longitude: -71.485596 },
@@ -190,7 +176,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "J",
         name: "Edificio J",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.036403, longitude: -71.485521 },
             {latitude: -33.036369, longitude: -71.485406 },
@@ -202,7 +187,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "L",
         name: "Edificio L",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.036404, longitude: -71.487644 },
             {latitude: -33.036425, longitude: -71.487571 },
@@ -214,7 +198,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "M",
         name: "Edificio M",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.036222, longitude: -71.485834 },
             {latitude: -33.036260, longitude: -71.485536 },
@@ -226,7 +209,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "P",
         name: "Edificio P",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.036017, longitude: -71.486561 },
             {latitude: -33.035972, longitude: -71.486440 },
@@ -238,7 +220,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "Q",
         name: "Edificio Q",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.036583, longitude: -71.485362 },
             {latitude: -33.036655, longitude: -71.485345 },
@@ -250,7 +231,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "R",
         name: "Edificio R",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.035812, longitude: -71.487987 },
             {latitude: -33.035780, longitude: -71.488073 },
@@ -264,7 +244,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "S",
         name: "Edificio S",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.037629, longitude: -71.485535 },
             {latitude: -33.037616, longitude: -71.485615 },
@@ -284,7 +263,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "U",
         name: "Edificio U",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.037571, longitude: -71.485251 },
             {latitude: -33.037569, longitude: -71.485324 },
@@ -298,7 +276,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "W",
         name: "Edificio W",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.037310, longitude: -71.485824 },
             {latitude: -33.037375, longitude: -71.485854 },
@@ -310,7 +287,6 @@ const JMCBuildings: BuildingProps[] = [
     {
         id: "X",
         name: "Edificio X",
-        description: "Edificio de informatica",
         coordinates: [
             {latitude: -33.039330, longitude: -71.485148 },
             {latitude: -33.039335, longitude: -71.485229 },
